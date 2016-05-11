@@ -1,0 +1,66 @@
+.widget {
+	margin: 0 0 1.5em;
+
+	/* Make sure select elements fit in widgets */
+	select {
+		max-width: 100%;
+	}
+}
+
+.widget-title {
+
+	.home & {
+		@extend %h2;
+		@extend %quadtitle;
+	}
+}
+
+/* Search widget */
+.widget_search {
+
+	.search-submit {
+		display: none;
+	}
+
+	.search-field {
+		width: 98.5%;
+	}
+}
+
+.widget_recent_entries {
+
+	.home & {
+
+		ul {
+			@extend %listreset;
+		}
+	}
+}
+
+.rpwe_widget {
+
+	a {
+		color 			: $color__text-widget-title;
+		text-transform 	: uppercase;
+	}
+}
+
+.rpwe-title {
+	@extend %h4;
+}
+
+.tribe-events-list-widget {
+	ol, ul {
+		@extend %listreset;
+		margin-bottom: 1.5em;
+	}
+
+	.entry-title {
+		margin: 0;
+		font-weight: bold;
+	}
+}
+
+
+
+

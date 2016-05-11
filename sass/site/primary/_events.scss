@@ -1,0 +1,10 @@
+.tribe-events-event-meta {
+	background-color: $med !important;
+}
+
+.tribe-events-notices {
+	background-color: $orange !important;
+	color 			: $light !important;
+	text-shadow 	: none;
+	border-color 	: darken( $orange, 15% );
+}

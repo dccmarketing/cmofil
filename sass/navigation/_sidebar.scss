@@ -1,0 +1,88 @@
+.nav-sidebar {
+	clear 	: both;
+	margin 	: 0 auto;
+
+	ul {
+		@extend %listreset;
+		margin: 0 auto;
+	}
+
+	$logos: 'logo' $maroon, 'heart' $aqua, 'car' $aqua, 'school-xing' $royal, 'calendar' $salmon, 'email' $orange, 'gallery' $maroon;
+
+	@each $logo in $logos {
+		.icon-#{nth($logo, 1)} {
+			@include button( nth($logo, 2) );
+			margin-right: 4px;
+			transition: 0.5s;
+
+			&:hover {
+				box-shadow: 2px 2px 5px $dark;
+			}
+		}
+	}
+
+	li {
+		padding 		: 0.55em;
+		margin 			: 0 auto 1.1em;
+		position 		: relative;
+		height 			: 4.5em;
+
+		@media only screen and (min-width: $bp__menu-button+1) and (max-width: $bp__sidebar - 1) {
+			width 		: 48%;
+			float 		: left;
+			margin 		: 0 1% 1em;
+		}
+	}
+
+	svg {
+		@extend %sidebaricons;
+		@extend %vertcenter;
+	}
+
+	.menu-icon-label {
+		float 			: left;
+		width 			: 64%;
+		font-size 		: 1.6em;
+		font-weight 	: bold;
+		line-height 	: 1.225em;
+		@extend %vertcenter;
+
+		@media only screen and (min-width: $bp__tablet) and (max-width: $bp__buttons) {
+			font-size: 1.25em;
+		}
+	}
+
+	.icon-gallery {
+
+		.home & {
+			display: none;
+		}
+	}
+
+	.icon-calendar {
+		position: relative;
+	}
+
+	.icon-date {
+		position: absolute;
+		left: 1.3em;
+		top: 1.1em;
+		font-size: 1.5em;
+
+		@media only screen and (min-width: $bp__tablet) and (max-width: $bp__buttons) {
+			font-size 	: 1em;
+			top 		: 1.75em;
+			left 		: 1.75em;
+		}
+	}
+
+	.dashicons {
+		@extend %sidebaricons;
+		line-height: 1.2em;
+	}
+
+	.page & {
+		width: 97%;
+	}
+
+}

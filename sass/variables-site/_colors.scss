@@ -1,0 +1,89 @@
+$light			: #fff;
+$med			: #ccc;
+$dark			: #020202;
+$trans 			: transparent;
+
+$lighterturq 	: #b2e0df;
+$lighturq2 		: #89cbca;
+$turq 			: #52c2ba;
+$darkturq 		: #339999;
+
+$lightsalmon 	: #e87d6b;
+$salmon 		: #e1563f;
+
+$lighteraqua 	: #90e3eb;
+$lightaqua 		: #3accdb;
+$aqua 			: #23b1bf;
+
+$lightmaroon 	: #c06270;
+$maroon 		: #ad4555;
+
+$skyblue 		: #89BEE2;
+$lightroyal		: #336598;
+$royal			: #407ebe;
+$navy 			: #005580;
+
+$lightorange 	: #ffaf37;
+$orange 		: #ff7f00;
+
+$lightviolet 	: #6d5f97;
+$voilet 		: #574882;
+
+
+// Backgrounds
+$color__background-body		: $turq;
+$color__background-screen	: $turq;
+$color__background-hr		: $med;
+$color__background-button	: #e6e6e6;
+$color__background-pre		: #eee;
+$color__background-ins		: #fff9c0;
+$color__bg-partners 		: $royal;
+
+// Text colors
+$color__text-screen			: #21759b;
+$color__text-input			: #666;
+$color__text-input-focus	: #111;
+$color__link				: $turq;
+$color__link-visited		: $turq;
+$color__link-hover			: $turq;
+$color__text-main			: #404040;
+$color__text-social 		: $light;
+$color__text-ins 			: $dark;
+$color__text-button 		: $light;
+$color__text-footer 		: $light;
+$color__text-widget-title 	: $aqua;
+
+// Border colors
+$color__border-button			: $med $med #bbb;
+$color__border-button-hover		: $med #bbb #aaa;
+$color__border-button-focus		: #aaa #bbb #bbb;
+$color__border-input			: $med;
+$color__border-abbr				: #666;
+$color__border-partner-header 	: $navy;
+
+// Shadow colors
+$color__shadow-button-text 			: rgba(255, 255, 255, 0.8);
+$color__shadow-button-inner 		: rgba(255, 255, 255, 0.5);
+$color__shadow-button-inner-2 		: rgba(0, 0, 0, 0.05);
+$color__shadow-button-inner-hover 	: rgba(255, 255, 255, 0.8);
+$color__shadow-button-inner-2-hover : rgba(0, 0, 0, 0.02);
+$color__shadow-button-inner-focus 	: rgba(255, 255, 255, 0.5);
+$color__shadow-button-inner-2-focus : rgba(0, 0, 0, 0.15);
+$color__shadow-text-menu 			: $dark;
+
+// Menu colors
+$color__bg-submenu 				: $darkturq;
+$color__bg-menu-button			: $trans;
+$color__bg-menu-button-mobile 	: $trans;
+$color__bg-menu-item-mobile		: $trans;
+$color__bg-menu-item			: $trans;
+$color__bg-menu-item-hover 		: darken( $darkturq, 20% );
+$color__text-menu-mobile		: $light;
+$color__text-menu-mobile-hover 	: $light;
+$color__text-menu				: $light;
+$color__text-menu-hover			: $light;
+$color__text-menu-button		: $light;
+$color__text-menu-button-mobile : $light;
+$color__text-menu-current		: $light;
+$color__text-menu-current-hover	: $light;
+$color__text-submenu			: $light;

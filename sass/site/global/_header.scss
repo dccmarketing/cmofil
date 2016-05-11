@@ -1,0 +1,79 @@
+.site-header {
+	// DO NOT ADD PADDING HERE! - it screws up menus
+	overflow 		: auto;
+	margin-bottom	: 0.5em;
+
+	@media only screen and (min-width: $bp__menu-button+1) {
+		overflow 	: visible;
+	}
+}
+
+.site-branding {
+	margin		: 0 auto;
+	text-align 	: center;
+
+	@media only screen and (min-width: $bp__menu-button+1) {
+		float 	: left;
+	}
+}
+
+.site-title {
+	text-align: center;
+}
+
+.header-info {
+	color 			: $light;
+	text-align 		: center;
+	margin-bottom 	: 1em;
+
+	@media only screen and (min-width: $bp__menu-button+1) {
+		float 			: right;
+		text-align 		: right;
+		padding-right 	: 0.5em;
+		margin-bottom 	: 0;
+	}
+
+	a {
+		color: $light;
+		text-decoration: none;
+	}
+
+	p {
+		margin: 0.5em;
+	}
+
+	ul {
+		@extend %listreset;
+
+	}
+
+	li {
+		display: inline-block;
+
+		&:first-child a {
+			padding-right 	: 0.5em;
+			border-right 	: 1px solid $light;
+		}
+	}
+
+	.hours {
+
+		a {
+			text-decoration: underline;
+		}
+	}
+
+	.phone {
+		font-weight: bold;
+	}
+
+	.search-form {
+		.search-submit {
+			display: none;
+		}
+	}
+
+	.hours-desc {
+		font-size: 0.8em;
+	}
+}

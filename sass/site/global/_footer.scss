@@ -1,0 +1,110 @@
+.site-footer {
+	width 		: 100%;
+	float 		: left;
+	overflow 	: auto;
+	color 		: $color__text-footer;
+
+	ul {
+		@extend %listreset;
+	}
+
+	a {
+		color 			: $color__text-footer;
+		text-decoration : none;
+	}
+}
+
+.footer-wrap {
+	overflow: auto;
+
+	.home & {
+		padding-top: 0;
+	}
+}
+
+.site-info {
+	@extend %footer-halves;
+	margin-left: 0;
+
+	@media only screen and (min-width: $bp__tablet) {
+		text-align 	: left;
+	}
+}
+
+.footer-right {
+	@extend %footer-halves;
+	margin-right: 0;
+
+	@media only screen and (min-width: $bp__tablet) {
+		text-align 	: right;
+	}
+}
+
+.partners {
+	padding 			: 1em;
+	margin-bottom 		: $size__default-bot-marg;
+
+	@include button( $color__bg-partners, 'off' );
+
+	li {
+		margin 		: 0 auto $size__default-bot-marg;
+		max-width 	: 80%;
+
+		@media only screen and (min-width: $bp__tablet) {
+			@include margcols(6);
+			vertical-align: middle;
+		}
+	}
+}
+
+.partners-header {
+	@extend %quadtitle;
+	border-bottom 	: 1px solid $color__border-partner-header;
+}
+
+.footer-logo {
+	margin-bottom 	: 3em;
+	text-align 		: center;
+
+	@media only screen and (min-width: $bp__tablet) {
+		text-align: left;
+		@include margcols(4,1);
+		margin-left: 0;
+	}
+}
+
+.footer-menu {
+	text-transform 	: uppercase;
+	padding 		: 1em 0;
+	display 		: none;
+
+	@media only screen and (min-width: $bp__tablet) {
+		display: block;
+		@include margcols(4,3);
+		margin-right: 0;
+	}
+
+	li {
+		display 		: inline-block;
+		vertical-align 	: top;
+
+		&:after {
+			content: " /";
+		}
+
+		&:last-child:after {
+			content: "";
+		}
+	}
+
+	a {
+		&:hover {
+			color: $lighterturq;
+		}
+
+		svg {
+			fill: $light;
+		}
+	}
+}
+
